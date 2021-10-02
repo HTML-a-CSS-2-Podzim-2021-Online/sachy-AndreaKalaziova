@@ -17,7 +17,6 @@ main {
     min-width: 329px;
     background-color: teal;
     margin: auto;
-    padding: 20px 0;
 }
 h2 {
     font-size: 1.3rem;
@@ -48,7 +47,7 @@ button {
     text-align: left;
 }
 .sachovnice {
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(8,12.5%);
     grid-template-rows: repeat(8,12.5%);
@@ -60,10 +59,7 @@ button {
     aspect-ratio: 1/1;
 }
 .sachovnice img {
-    width: 40px;
-}
-.sachovnice > div {
-    padding: 3px;
+    width: clamp(50px, 11vw, 75px)
 }
 .vez-bila, 
 .kun-cerna, 
@@ -108,27 +104,12 @@ button {
     grid-row: 8;
 }
 
-@media (min-width: 400px) {
-    .sachovnice img {
-        width: 50px;
-    }
-}
-
-@media (min-width: 500px) {
-    .sachovnice img {
-        width: 60px;
-    }
-}
-
 @media (min-width: 600px) {
     main {max-width: 600px;}
     .sachovnice {
         width: 100%;
         height: 100%;
         display: grid;
-    }
-    .sachovnice img {
-        width: 70px;
     }
 }
 
