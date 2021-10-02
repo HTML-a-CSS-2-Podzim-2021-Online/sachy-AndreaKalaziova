@@ -1,21 +1,16 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
-/*
-- Stránka by měla být responzivní.
-- Stránku zveřejni na GitHub pages.
-- Odkaz na stránku přidej do popisku repozitáře v sekci About. 
-- Do řádku Website vlož adresu, na které je výsledný web hostovaný.
-*/
+/*--------------------------------------------*/
+
 body {    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     text-align: center;
 }
 main {
-    min-width: 329px;
-    background-color: teal;
+    min-width: 394px;  
     margin: auto;
 }
 h2 {
@@ -37,15 +32,30 @@ button {
     display: flex;
     justify-content: space-between;
 }
+.hraci img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+.bily img {
+    margin: 10px 10px 20px 0;
+}
+.cerny img {
+    margin: 10px 0 20px 10px;
+    order: 2;
+}
+.hraci p {margin: 0;}
+
 .bily {
     display: flex;
-    float: left;
-    text-align: right;
+    justify-content: end;
+    align-items: center;
 }
 .cerny {
-    float: right;
-    text-align: left;
+    display: flex;
+    justify-content: end;
+    align-items: center
 }
+
 .sachovnice {
     width: 100%;
     display: grid;
